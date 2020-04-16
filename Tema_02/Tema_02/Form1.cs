@@ -66,5 +66,54 @@ namespace Tema_02
             dgRecibo.DataSource = null;
             dgRecibo.DataSource = recibos;
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            // A traves del foreach realizo la busqueda
+            // Comparando con numero
+
+            foreach(Recibo item in recibos)
+            {
+                // Si lo encuentra
+                if(item.numero == txtNumero.Text)
+                {
+                    // Visualizo los datos en los controles
+                    dtFecha.Value = item.fecha;
+                    txtCliente.Text = item.cliente;
+                    txtDescripcion.Text = item.descripcion;
+                    txtMonto.Text = item.monto.ToString();
+
+                    return; // Salir del metodo, ya lo encontraste
+                }
+            }
+            // Si el for no lo encontró
+            MessageBox.Show("No encontró el número");
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            // Verifico si el textBox esta vacio
+            if(txtNumero.Text.Trim() == string.Empty)
+            {
+                MessageBox.Show("Debe ingresar un número");
+                return; // Salir
+            }
+
+            // Si no esta vacio lo busco para eliminar
+            foreach(Recibo item in recibos)
+            {
+                if (item.numero == txtNumero.Text)
+                {
+                    // Quitar items
+                    recibos.Remove(item);
+                    dgRecibo.DataSource = null;
+                    dgRecibo.DataSource = recibos;
+                    return;
+                }
+            }
+
+            // Si no lo encontró
+            MessageBox.Show("No existe el numero del recibo");
+        }
     }
 }
