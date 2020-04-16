@@ -47,16 +47,18 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtNeto = new System.Windows.Forms.TextBox();
             this.txtAFP = new System.Windows.Forms.TextBox();
+            this.btnRetornar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnProcesar
             // 
-            this.btnProcesar.Location = new System.Drawing.Point(228, 375);
+            this.btnProcesar.Location = new System.Drawing.Point(191, 375);
             this.btnProcesar.Name = "btnProcesar";
             this.btnProcesar.Size = new System.Drawing.Size(75, 23);
             this.btnProcesar.TabIndex = 29;
             this.btnProcesar.Text = "PROCESAR";
             this.btnProcesar.UseVisualStyleBackColor = true;
+            this.btnProcesar.Click += new System.EventHandler(this.btnProcesar_Click);
             // 
             // btnLimpiar
             // 
@@ -224,11 +226,22 @@
             this.txtAFP.Size = new System.Drawing.Size(108, 20);
             this.txtAFP.TabIndex = 33;
             // 
+            // btnRetornar
+            // 
+            this.btnRetornar.Location = new System.Drawing.Point(294, 375);
+            this.btnRetornar.Name = "btnRetornar";
+            this.btnRetornar.Size = new System.Drawing.Size(75, 23);
+            this.btnRetornar.TabIndex = 34;
+            this.btnRetornar.Text = "Formulario 1";
+            this.btnRetornar.UseVisualStyleBackColor = true;
+            this.btnRetornar.Click += new System.EventHandler(this.btnRetornar_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 428);
+            this.Controls.Add(this.btnRetornar);
             this.Controls.Add(this.txtAFP);
             this.Controls.Add(this.txtNeto);
             this.Controls.Add(this.label9);
@@ -276,5 +289,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtNeto;
         private System.Windows.Forms.TextBox txtAFP;
+        private System.Windows.Forms.Button btnRetornar;
     }
 }
