@@ -1,1 +1,9 @@
 C:\Users\USUARIO\Desktop\POOI\tema_01\Tema_01\Tema_01\bin\Debug\Tema_01.exe.config
+C:\Users\USUARIO\Desktop\POOI\tema_01\Tema_01\Tema_01\bin\Debug\Tema_01.exe
+C:\Users\USUARIO\Desktop\POOI\tema_01\Tema_01\Tema_01\bin\Debug\Tema_01.pdb
+C:\Users\USUARIO\Desktop\POOI\tema_01\Tema_01\Tema_01\obj\Debug\Tema_01.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Desktop\POOI\tema_01\Tema_01\Tema_01\obj\Debug\Tema_01.Form1.resources
+C:\Users\USUARIO\Desktop\POOI\tema_01\Tema_01\Tema_01\obj\Debug\Tema_01.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\POOI\tema_01\Tema_01\Tema_01\obj\Debug\Tema_01.csproj.GenerateResource.Cache
+C:\Users\USUARIO\Desktop\POOI\tema_01\Tema_01\Tema_01\obj\Debug\Tema_01.exe
+C:\Users\USUARIO\Desktop\POOI\tema_01\Tema_01\Tema_01\obj\Debug\Tema_01.pdb

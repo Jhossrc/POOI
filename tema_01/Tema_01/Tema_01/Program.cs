@@ -16,7 +16,9 @@ namespace Tema_01
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            // Indicar el formulario de inicio del proyecto.
+            Application.Run(new Form2());
         }
     }
 }
