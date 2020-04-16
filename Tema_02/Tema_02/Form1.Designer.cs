@@ -43,6 +43,8 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.dgRecibo = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgRecibo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -184,11 +186,23 @@
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = true;
             // 
+            // dgRecibo
+            // 
+            this.dgRecibo.AllowUserToAddRows = false;
+            this.dgRecibo.AllowUserToDeleteRows = false;
+            this.dgRecibo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgRecibo.Location = new System.Drawing.Point(28, 270);
+            this.dgRecibo.Name = "dgRecibo";
+            this.dgRecibo.ReadOnly = true;
+            this.dgRecibo.Size = new System.Drawing.Size(397, 150);
+            this.dgRecibo.TabIndex = 15;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 360);
+            this.ClientSize = new System.Drawing.Size(457, 485);
+            this.Controls.Add(this.dgRecibo);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnAgregar);
@@ -206,6 +220,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dgRecibo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,6 +243,7 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.DataGridView dgRecibo;
     }
 }
 
