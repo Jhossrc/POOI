@@ -17,7 +17,7 @@ namespace Tema_02
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             /* Cambio de formulario de inicio */
-            Application.Run(new Form2());
+            Application.Run(new Form3());
         }
     }
 }
