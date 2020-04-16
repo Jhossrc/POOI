@@ -14,6 +14,11 @@ namespace Tema_01
         {
             return base.pago() * 0.13;
         }
+
+        public double Neto()
+        {
+            return base.pago() - AFP();
+        }
         
     }
 }
