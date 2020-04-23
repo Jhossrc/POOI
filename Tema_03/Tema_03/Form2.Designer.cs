@@ -61,6 +61,7 @@
             this.txtGuardar.TabIndex = 2;
             this.txtGuardar.Text = "GUARDAR";
             this.txtGuardar.UseVisualStyleBackColor = true;
+            this.txtGuardar.Click += new System.EventHandler(this.txtGuardar_Click);
             // 
             // txtAbrir
             // 
@@ -70,6 +71,7 @@
             this.txtAbrir.TabIndex = 3;
             this.txtAbrir.Text = "ABRIR";
             this.txtAbrir.UseVisualStyleBackColor = true;
+            this.txtAbrir.Click += new System.EventHandler(this.txtAbrir_Click);
             // 
             // Form2
             // 
