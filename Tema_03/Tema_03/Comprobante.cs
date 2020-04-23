@@ -17,7 +17,12 @@ namespace Tema_03
         // Programar el descuento que representa el 20 + 30% de descuento del monto
         public double Descuento()
         {
-            return 20 + 0.3 * monto;
+            return (monto*0.20) + (monto*0.80)*0.30;
+        }
+
+        public double Neto()
+        {
+            return monto - Descuento();
         }
     }
 }
