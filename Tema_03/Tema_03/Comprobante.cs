@@ -13,6 +13,9 @@ namespace Tema_03
         public string cliente { get; set; }
         public string descripcion { get; set; }
         public double monto { get; set; }
+        // definir al atributo descuento que retorna el valor de descuento
+        public double descuento { get { return Descuento(); } }
+        public double neto { get { return Neto(); } }
 
         // Programar el descuento que representa el 20 + 30% de descuento del monto
         public double Descuento()
