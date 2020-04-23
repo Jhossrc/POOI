@@ -20,6 +20,23 @@ namespace Tema_03
 
         private void txtGuardar_Click(object sender, EventArgs e)
         {
+            // Cuadro de dialogo para guardar en txt o sql
+            SaveFileDialog op = new SaveFileDialog();
+            op.Filter = "Archivo de texto|*.txt|Archivo sql|*.sql";
+
+            if (op.ShowDialog() == DialogResult.OK)
+            {
+                // Para guardar el fileStream creará el archivo para guardar contenido
+                FileStream f = new FileStream(op.FileName, FileMode.Create);
+
+                // Definir al escritor el cual apunta a f
+                StreamWriter escritor = new StreamWriter(f);
+
+                // Escribir
+                escritor.Write(txtBloc.Text);
+
+                escritor.Close(); f.Close(); // Cerrar
+            }
 
         }
 
