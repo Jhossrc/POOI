@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Tema_03
+{
+    public class Comprobante
+    {
+        public int numero { get; set; }
+        public DateTime fecha { get; set; }
+        public string cliente { get; set; }
+        public string descripcion { get; set; }
+        public double monto { get; set; }
+
+        // Programar el descuento que representa el 20 + 30% de descuento del monto
+        public double Descuento()
+        {
+            return 20 + 0.3 * monto;
+        }
+    }
+}
